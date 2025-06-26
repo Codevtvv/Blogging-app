@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Feed - MyBlog</title>
+    <style>
+        /* Global Font Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+        /* Navbar styling */
+.navbar {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #28a745;
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* --- Blog Feed Styling --- */
+.recent-posts {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.recent-posts h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.recent-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-posts ul li {
+    margin: 15px 0;
+    background-color: #f8f9fa;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border-left: 5px solid #28a745;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.recent-posts ul li:hover {
+    background-color: #e9ecef;
+}
+
+.recent-posts ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.recent-posts ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsive Design --- */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">MyBlog</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="create-post.html">Create Post</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="user-profile.html" class="active">Profile</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="blog-feed.html" class="active">Blog Feed</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Feed -->
+    <main class="recent-posts">
+        <h3>Recent Blog Posts</h3>
+        <ul>
+            <li><a href="post-1.html">The Future of Technology</a></li>
+            <li><a href="post-2.html">Top Health Tips for 2024</a></li>
+            <li><a href="post-3.html">How to Achieve a Balanced Lifestyle</a></li>
+            <li><a href="post-4.html">Top Travel Destinations</a></li>
+            <li><a href="post-5.html">The Best Food Trends This Year</a></li>
+        </ul>
+    </main>
+
+</body>
+</html>
