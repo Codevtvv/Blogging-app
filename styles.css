@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    line-height: 1.6;
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #6c63ff;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.welcome-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.write-post-btn {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.write-post-btn:hover {
+    background-color: #218838;
+}
+
+/* Form Sections (Login/Register/Edit Profile) */
+.register-section,
+.edit-profile-section {
+    background-color: white;
+    max-width: 500px;
+    margin: 3em auto;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.register-section h2,
+.edit-profile-section h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    color: #333;
+}
+
+.register-form,
+.edit-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.register-form label,
+.edit-profile-form label {
+    font-weight: bold;
+}
+
+.register-form input,
+.edit-profile-form input,
+.edit-profile-form textarea {
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.register-btn,
+.save-changes-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8em;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-btn:hover,
+.save-changes-btn:hover {
+    background-color: #0056b3;
+}
+
+.cancel-btn {
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    text-decoration: underline;
+}
+
+/* Categories */
+.categories-section {
+    text-align: center;
+    padding: 4em 1em;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin: 1em 0;
+}
+
+.category-list a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #28a745;
+    border: 2px solid #28a745;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.category-list a:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Blog Post Page */
+main.register-section ul {
+    padding-left: 1.2em;
+    margin-top: 1em;
+}
+
+main.register-section li {
+    margin-bottom: 0.5em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    position: relative;
+    margin-top: 2em;
+}

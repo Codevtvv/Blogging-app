@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - MyBlog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">MyBlog</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="create-post.html">Create Post</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="user-profile.html" class="active">Profile</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="blog-feed.html">Blog Feed</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Edit Profile Section -->
+    <main class="edit-profile-section">
+        <h2>Edit Profile</h2>
+
+        <form action="save-profile-changes.html" method="POST" class="edit-profile-form">
+            <div class="form-group">
+                <label for="profile-image">Profile Image</label>
+                <input type="file" id="profile-image" name="profile-image" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Full Name</label>
+                <input type="text" id="username" name="username" value="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" value="john.doe@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="4" required>A passionate writer and tech enthusiast. Sharing knowledge and insights through blogging.</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" value="New York, USA" required>
+            </div>
+
+            <button type="submit" class="save-changes-btn">Save Changes</button>
+        </form>
+
+        <a href="profile.html" class="cancel-btn">Cancel</a>
+    </main>
+
+</body>
+</html>

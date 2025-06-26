@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile - MyBlog</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Profile Page Styling */
+.profile-container {
+  padding: 3rem 1rem;
+  background-color: #f4f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #28a745;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile-data h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-data p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  font-size: 1rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.edit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn.logout {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn.edit:hover {
+  background-color: #218838;
+}
+
+.btn.logout:hover {
+  background-color: #c82333;
+}
+
+.user-posts {
+  margin-top: 2rem;
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.user-posts h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.user-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-posts li {
+  margin-bottom: 0.8rem;
+}
+
+.user-posts a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.user-posts a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">MyBlog</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="create-post.html">Create Post</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="user-profile.html" class="active">Profile</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="blog-feed.html">Blog Feed</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <main class="profile-container">
+    <section class="profile-box">
+
+      <div class="profile-data">
+        <h2>John Doe</h2>
+        <p><strong>Email:</strong> john.doe@example.com</p>
+        <p><strong>Location:</strong> New York, USA</p>
+        <p><strong>Bio:</strong> A passionate writer and tech enthusiast.</p>
+
+        <a href="editprofile.html" class="btn edit">Edit Profile</a>
+        <a href="login.html" class="btn logout">Logout</a>
+      </div>
+    </section>
+
+    <section class="user-posts">
+      <h3>Your Posts</h3>
+      <ul>
+        <li><a href="#">Exploring the World: A Traveler's Guide</a></li>
+        <li><a href="#">The Art of Photography: Capturing Life's Moments</a></li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
